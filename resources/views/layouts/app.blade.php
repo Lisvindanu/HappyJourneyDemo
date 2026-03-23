@@ -10,7 +10,7 @@
 
     {{-- Open Graph --}}
     <meta property="og:site_name" content="Happy Journey Tour & Travel">
-    <meta property="og:title" content="@yield('og_title', '@yield('title', 'Happy Journey Tour & Travel')') | Happy Journey">
+    <meta property="og:title" content="@yield('title', 'Happy Journey Tour & Travel') | Happy Journey">
     <meta property="og:description" content="@yield('meta_description', 'Happy Journey - Tour & Travel terpercaya. Paket wisata domestik dan internasional dengan kualitas premium dan harga kompetitif.')">
     <meta property="og:type" content="@yield('og_type', 'website')">
     <meta property="og:url" content="{{ url()->current() }}">
