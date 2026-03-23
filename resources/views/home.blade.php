@@ -619,13 +619,8 @@
 
             {{-- Company Info --}}
             <div data-aos="fade-up">
-                <a href="{{ route('home') }}" class="flex items-center gap-2 mb-6">
-                    <div class="relative w-12 h-12">
-                        <div class="absolute inset-0 bg-gradient-to-br from-amber-400 to-amber-600 rounded-xl rotate-6"></div>
-                        <div class="absolute inset-0 bg-gradient-to-br from-amber-500 to-amber-700 rounded-xl flex items-center justify-center">
-                            <svg class="w-6 h-6 text-white -rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
-                        </div>
-                    </div>
+                <a href="{{ route('home') }}" class="flex items-center gap-3 mb-6">
+                    <img src="{{ asset('images/logo/cropped-logo_happy_journey.png') }}" alt="Happy Journey" class="w-12 h-12 object-contain">
                     <div>
                         <span class="text-2xl font-bold text-white">Happy</span><span class="text-2xl font-bold text-amber-400">Journey</span>
                     </div>
