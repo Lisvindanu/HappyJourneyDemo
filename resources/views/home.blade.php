@@ -699,7 +699,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
         <div class="rounded-2xl overflow-hidden border border-white/10 shadow-lg">
             <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAwu4CGUgxRjUN4pahOIpTsKmKw35gWgN8&q=Menara+Cakrawala+Jl+MH+Thamrin+No+9+Jakarta+Pusat&zoom=16"
+                src="https://maps.google.com/maps?q=Menara+Cakrawala+Jl+MH+Thamrin+No+9+Jakarta+Pusat&output=embed&z=16"
                 width="100%" height="240" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade" title="Lokasi Happy Journey">
             </iframe>
