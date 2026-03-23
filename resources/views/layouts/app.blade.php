@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="description" content="@yield('meta_description', 'Happy Journey - Tour & Travel terpercaya. Paket wisata domestik dan internasional dengan kualitas premium dan harga kompetitif.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'happy journey, tour travel, paket wisata, jepang, korea, china, eropa, vietnam')">
+    <meta property="og:title" content="@yield('title', 'Happy Journey Tour & Travel')">
+    <meta property="og:description" content="@yield('meta_description', 'Happy Journey - Tour & Travel terpercaya.')">
+    <meta property="og:type" content="website">
+
+    <title>@yield('title', 'Happy Journey Tour & Travel') | It\'s Not Just Travel, It\'s a Happy Journey</title>
+
+    {{-- Google Fonts: Poppins --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    {{-- AOS CSS CDN --}}
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    {{-- Vite CSS --}}
+    @vite(['resources/css/app.css'])
+
+    @stack('head')
+</head>
+<body class="font-sans antialiased bg-white text-slate-800 min-h-screen flex flex-col">
+
+    {{-- Main content --}}
+    <div id="app" class="flex flex-col min-h-screen">
+        @yield('content')
+    </div>
+
+    {{-- Alpine.js CDN (defer) --}}
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    {{-- AOS JS CDN --}}
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 700,
+                once: true,
+                offset: 60,
+                easing: 'ease-out-cubic',
+            });
+        });
+    </script>
+
+    {{-- Vite JS --}}
+    @vite(['resources/js/app.js'])
+
+    @stack('scripts')
+</body>
+</html>
