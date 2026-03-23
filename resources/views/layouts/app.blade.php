@@ -13,6 +13,10 @@
 
     <title>@yield('title', 'Happy Journey Tour & Travel') | It\'s Not Just Travel, It\'s a Happy Journey</title>
 
+    {{-- Favicon --}}
+    <link rel="icon" type="image/png" href="{{ asset('images/logo/cropped-logo_happy_journey.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/logo/cropped-logo_happy_journey.png') }}">
+
     {{-- Google Fonts: Poppins --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

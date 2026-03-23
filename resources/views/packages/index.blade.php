@@ -215,9 +215,13 @@
 </div>
 
 {{-- Footer --}}
-<footer class="bg-blue-950 text-white py-8">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-        <p class="text-white/60 text-sm">Copyright &copy; {{ date('Y') }} - Happy Journey Tour & Travel. All rights reserved.</p>
+<footer class="bg-blue-950 text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-3">
+        <div class="flex items-center gap-3">
+            <img src="{{ asset('images/logo/cropped-logo_happy_journey.png') }}" alt="Happy Journey" class="w-10 h-10 object-contain">
+            <span class="text-xl font-bold"><span class="text-white">Happy</span><span class="text-amber-400">Journey</span></span>
+        </div>
+        <p class="text-white/50 text-sm">Copyright &copy; {{ date('Y') }} - Happy Journey Tour &amp; Travel.</p>
     </div>
 </footer>
 
