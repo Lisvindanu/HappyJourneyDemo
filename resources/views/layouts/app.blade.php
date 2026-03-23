@@ -30,7 +30,7 @@
 
     @stack('head')
 </head>
-<body class="font-sans antialiased bg-white text-slate-800 min-h-screen flex flex-col">
+<body class="font-sans antialiased bg-white text-slate-800 min-h-screen flex flex-col overflow-x-hidden">
 
     {{-- Main content --}}
     <div id="app" class="flex flex-col min-h-screen">
