@@ -2,6 +2,8 @@
 
 @section('title', $article->title . ' - Happy Journey')
 @section('meta_description', $article->excerpt)
+@section('og_type', 'article')
+@section('og_image', $article->display_image)
 
 @section('content')
 <div x-data="{}">

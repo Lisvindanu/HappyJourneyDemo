@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Inspirasi Perjalanan - Happy Journey')
+@section('og_image', asset('images/hero-blog.jpg'))
 @section('meta_description', 'Temukan artikel inspiratif, tips perjalanan, dan panduan destinasi wisata dari Happy Journey Tour & Travel.')
 
 @section('content')

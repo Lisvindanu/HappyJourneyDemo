@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Destinasi Tour - Happy Journey')
+@section('og_image', asset('images/hero-destinations.jpg'))
 @section('meta_description', 'Temukan berbagai pilihan paket tour Happy Journey berdasarkan destinasi — Jepang, Korea, China, Vietnam, Eropa, dan lebih banyak lagi.')
 
 @section('content')

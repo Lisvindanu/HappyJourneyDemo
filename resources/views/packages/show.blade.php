@@ -2,6 +2,7 @@
 
 @section('title', $package->name . ' - Happy Journey')
 @section('meta_description', 'Paket tour ' . $package->name . ' - ' . $package->duration . '. Mulai Rp ' . number_format($package->price_adult, 0, ',', '.') . '. Book sekarang bersama Happy Journey.')
+@section('og_image', asset('images/packages/' . $package->image))
 
 @section('content')
 <div x-data="{

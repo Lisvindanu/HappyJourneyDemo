@@ -7,9 +7,23 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="@yield('meta_description', 'Happy Journey - Tour & Travel terpercaya. Paket wisata domestik dan internasional dengan kualitas premium dan harga kompetitif.')">
     <meta name="keywords" content="@yield('meta_keywords', 'happy journey, tour travel, paket wisata, jepang, korea, china, eropa, vietnam')">
-    <meta property="og:title" content="@yield('title', 'Happy Journey Tour & Travel')">
-    <meta property="og:description" content="@yield('meta_description', 'Happy Journey - Tour & Travel terpercaya.')">
-    <meta property="og:type" content="website">
+
+    {{-- Open Graph --}}
+    <meta property="og:site_name" content="Happy Journey Tour & Travel">
+    <meta property="og:title" content="@yield('og_title', '@yield('title', 'Happy Journey Tour & Travel')') | Happy Journey">
+    <meta property="og:description" content="@yield('meta_description', 'Happy Journey - Tour & Travel terpercaya. Paket wisata domestik dan internasional dengan kualitas premium dan harga kompetitif.')">
+    <meta property="og:type" content="@yield('og_type', 'website')">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="@yield('og_image', asset('images/hero-packages.jpg'))">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="id_ID">
+
+    {{-- Twitter Card --}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('title', 'Happy Journey Tour & Travel')">
+    <meta name="twitter:description" content="@yield('meta_description', 'Happy Journey - Tour & Travel terpercaya.')">
+    <meta name="twitter:image" content="@yield('og_image', asset('images/hero-packages.jpg'))">
 
     <title>@yield('title', 'Happy Journey Tour & Travel') | It\'s Not Just Travel, It\'s a Happy Journey</title>
 
