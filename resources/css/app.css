@@ -12,6 +12,12 @@
     --color-brand-amber: #f59e0b;
 }
 
+/* Prevent horizontal overflow globally */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 /* =========================================================
    CUSTOM ANIMATIONS & UTILITIES
    ========================================================= */
