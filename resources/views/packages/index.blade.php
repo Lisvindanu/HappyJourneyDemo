@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Paket Tour - Happy Journey')
-@section('og_image', asset('images/hero-packages.jpg'))
+@section('og_image', asset('images/og-packages.jpg'))
 @section('meta_description', 'Temukan paket tour terbaik Happy Journey ke Asia, Eropa, dan destinasi impian Anda. Harga terjangkau, kualitas premium.')
 
 @section('content')
