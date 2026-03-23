@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" style="overflow-x:hidden;max-width:100%;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
 
     @stack('head')
 </head>
-<body class="font-sans antialiased bg-white text-slate-800 min-h-screen flex flex-col overflow-x-hidden">
+<body class="font-sans antialiased bg-white text-slate-800 min-h-screen flex flex-col" style="overflow-x:hidden;max-width:100%;width:100%;">
 
     {{-- Main content --}}
     <div id="app" class="flex flex-col min-h-screen">
