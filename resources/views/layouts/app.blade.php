@@ -14,8 +14,8 @@
     <meta property="og:description" content="@yield('meta_description', 'Happy Journey - Tour & Travel terpercaya. Paket wisata domestik dan internasional dengan kualitas premium dan harga kompetitif.')">
     <meta property="og:type" content="@yield('og_type', 'website')">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="@yield('og_image', asset('images/og-packages.jpg'))">
-    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image" content="@yield('og_image', asset('images/og-image.webp'))">
+    <meta property="og:image:type" content="image/webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="id_ID">
@@ -24,7 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('title', 'Happy Journey Tour & Travel')">
     <meta name="twitter:description" content="@yield('meta_description', 'Happy Journey - Tour & Travel terpercaya.')">
-    <meta name="twitter:image" content="@yield('og_image', asset('images/og-packages.jpg'))">
+    <meta name="twitter:image" content="@yield('og_image', asset('images/og-image.webp'))">
 
     <title>@yield('title', 'Happy Journey Tour & Travel') | It\'s Not Just Travel, It\'s a Happy Journey</title>
 
